@@ -12,11 +12,11 @@ setuptools.setup(
     description="更简单的配置",#包的简述
     long_description=long_description,    #包的详细介绍，一般在README.md文件内
     long_description_content_type="text/markdown",
-    url="https://github.com/",    #自己项目地址，比如github的项目地址
+    url="https://github.com/FZZkill/TxvxConfig",    #自己项目地址，比如github的项目地址
     packages= setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Mozilla Public License 2.0",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.8',    #对python的最低版本要求
