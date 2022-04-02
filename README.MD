@@ -1,13 +1,41 @@
-# README - Txvx config manager
-
-## What's it can do?
-
-### For example:
-Read the config  <br>
-Set the config <br>
-New a config <br>
-
+# README about Txvx config manager
+## What is?
+It is a config manager
+#### What can it do?
+It can set config, read config, get config and create a config
 ## How to use it?
-You can by pypi(pip) to install for you computer
+### 1,Install
+#### Linux/Unix
+Install python 3.9(If you use an earlier version, I cannot guarantee that this broken thing will work)
+pip install txvx
+####Windows
+Address:)
+
+###2,Use
+In you python code, write 'import txvx' <br>
+and new a object
+so...... <br>
+
+    import txvx
+    
+    Txvx = txvx.run()
+    Txvx.setFilePath(ConfigFilePathl)
+
+### 3,Functions
+
+| Functions | Use             | Do                                                      |
+|-----------|-----------------|---------------------------------------------------------|
+| get()     | get(var)        | get Config File {var} value                             |
+| set()     | set(var, value) | set Config File {var} value                             |
+| save()    | save()          | Save the changed file                                   |
+| create()  | create()        | Create a new Config File<br>(If it existed would erase) |
+| add()     | add(var, vaule) | add a new config vaule                                  |
+| del()     | del(var)        | delete vaule and return the config vaule                |
+# Note that the write operation is irreducible, and the write takes effect
+# Date invaluable exercise caution
 
 
+# Last and Last(Let me say a few world on important business)
+### Writer: FZZkill
+### Language: Python3.9
+### Where: Github & Pypi

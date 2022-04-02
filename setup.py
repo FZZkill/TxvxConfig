@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
  
 setuptools.setup(
     #install_requires = ["rich>=12.0.1"],
-    name="XNBConfig", # 用自己的名替换其中的YOUR_USERNAME_
+    name="Txvx_config_manager", # 用自己的名替换其中的YOUR_USERNAME_
     version="1.0",    #包版本号，便于维护版本
     author="XiaoDeng3386 & FZZkill",    #作者，可以写自己的姓名
     author_email="1744793737@qq.com or qa000m@126.com",    #作者联系方式，可写自己的邮箱地址
