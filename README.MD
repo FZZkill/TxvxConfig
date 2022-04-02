@@ -18,8 +18,7 @@ so...... <br>
 
     import txvx
     
-    Txvx = txvx.run()
-    Txvx.setFilePath(ConfigFilePathl)
+    Txvx = txvx.run(FilePath)
 
 ### 3,Functions
 
@@ -27,10 +26,10 @@ so...... <br>
 |-----------|-----------------|---------------------------------------------------------|
 | get()     | get(var)        | get Config File {var} value                             |
 | set()     | set(var, value) | set Config File {var} value                             |
-| save()    | save()          | Save the changed file                                   |
 | create()  | create()        | Create a new Config File<br>(If it existed would erase) |
 | add()     | add(var, vaule) | add a new config vaule                                  |
-| del()     | del(var)        | delete vaule and return the config vaule                |
+| remove()  | remove(var)     | delete vaule and return the config vaule                |
+| save()    | save()          | save infomation from RAM                                |
 # Note that the write operation is irreducible, and the write takes effect
 # Date invaluable exercise caution
 
