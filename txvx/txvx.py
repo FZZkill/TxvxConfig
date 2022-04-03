@@ -8,7 +8,7 @@ class run():
 
     def __init__(self, FilePath):
         self.Path = FilePath
-        self.Type += 1
+        self.Type = 1
         # Open file
         FileType = open(self.Path, "r")
         self.ListItems=FileType.readlines()
@@ -18,7 +18,10 @@ class run():
             self.ListItemsRun.append(b)
             
     def add(self, Item, vaule):
-        pass
+        add = []
+        add [0] = Item
+        add [1] = vaule
+        self.ListItemsRun.append[add]
 
     def remove(self, Item) :
         a = 0
@@ -34,10 +37,16 @@ class run():
     def set(self, Item, vaule):
         pass
     
-    def save():
+    def save(self):
         pass
+    
+    def show(self):
+        return ListItemsRun
 
     def get(self, Item):
         for x in self.ListItemsRun:
             if x[0] == Item:
                 return x[1]
+
+    def showType(self):
+        return self.Type
