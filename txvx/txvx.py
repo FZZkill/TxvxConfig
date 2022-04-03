@@ -35,8 +35,10 @@ class run():
         pass
     
     def set(self, Item, vaule):
-        pass
-    
+        for x in self.ListItemsRun:
+            if x[0] == Item:
+                x[1] = vaule
+ 
     def save(self):
         pass
     
@@ -50,3 +52,13 @@ class run():
 
     def showType(self):
         return self.Type
+
+    def new(Lists, Type=2)
+        if Type == 1:
+            self.ListItemsRun = []
+            self.ListItemsRun.append(Lists)
+        else :
+            self.ListItemsRun = Type
+        return True
+
+        
