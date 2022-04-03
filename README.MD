@@ -22,17 +22,17 @@ so...... <br>
 
 ### 3,Functions
 
-| Functions | Use             | Do                                                      |
-|-----------|-----------------|---------------------------------------------------------|
-| get()     | get(var)        | get Config File {var} value                             |
-| set()     | set(var, value) | set Config File {var} value                             |
-| create()  | create()        | Create a new Config File<br>(If it existed would erase) |
-| add()     | add(var, vaule) | add a new config vaule                                  |
-| remove()  | remove(var)     | delete vaule and return the config vaule                |
-| save()    | save()          | save infomation from RAM                                |
-# Note that the write operation is irreducible, and the write takes effect
-# Date invaluable exercise caution
+| Functions | Use             | Do                                                                                          |
+|-----------|-----------------|---------------------------------------------------------------------------------------------------------------------------------|
+| get()     | get(var)        | get Config File {var} value                                                                 |
+| set()     | set(var, value) | set Config File {var} value                                                                 |
+| create()  | create()        | Create a new Config File<br>(If it existed would erase)                                     |
+| add()     | add(var, vaule) | add a new config vaule                                                                      |
+| remove()  | remove(var)     | delete vaule and return the config vaule                                                    |
+| save()    | save()          | save infomation from RAM                                                                    |
+# If you choose infomation,Please use 'save()'!this important
 
+# Date invaluable exercise caution
 
 # Last and Last(Let me say a few world on important business)
 ### Writer: FZZkill
