@@ -44,7 +44,7 @@ Whatis in this file?for example
     example1 = Hello, World
     Writer = FZZkill
 
-
+### The "new()" can before replacing the parameter
 
 ### 5,Important
 If you choose infomation,Please use 'save()'!.This important
