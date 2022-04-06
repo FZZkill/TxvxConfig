@@ -35,34 +35,59 @@ so...... <br>
 | show()     | show()          | return all registered vaule                         |
 | showType() | showType()      | return now Type                                     |
 | new()      | new(List)       | Look Last!                                          |
-### 4,TxvxFile
 
-Usually, Its name is 'xxx.txvx'<br>
-Whatis in this file?for example
+### 4, Txvx file format
+
+Under normal circumstances (there is no abnormal situation), the configuration files are all suffixed with '.txvx'<br>
+For example: see nm's see.txvx
+
+Internal files usually look like this
 
     example = 5
     example1 = Hello, World
     Writer = FZZkill
 
-### The "new()" can before replacing the parameter
+but
 
-### 5,Important
-If you choose infomation,Please use 'save()'!.This important
+    I'm an idiot
+This is wrong because it has no value, you should write even null
 
-Date invaluable exercise caution
+    I'm not a fool =
 
-### Last
+Notes:
+I didn't expect to put it, this broken thing has a comment!
 
-How to do new()<br>
+    # Note: only at the beginning
+### 5, a momentary misstep and eternal hatred!
+When you change the file, please be sure to use the 'save()' function to save the file, this grandson will not automatically save it, which is very important!
+
+Data is priceless, operate with care
+
+### finally
+Here comes the point
+
+How to use the new method? This is the essence of the txvx method. Under normal circumstances, all functions need to pass the new method when reading the file registration.
+
+Normally, this function needs to pass two values
     
-    usage : now(List(need), Type(default = 2))
+    new([],type)
+   
+   What is [], this is easy to understand, in fact, it is to pass a list~~Why is the list []? I'm curious about this too, but that's the truth~
 
-You can set Type '1' or '2'
-
-    Type = 1 : ['xxx','xxx'] There can be only a couple
-    Type = 2 : [['xxx1', 'xxx'],['xxx2', 'xxx']] 
-
-How to provide a list of selected counting on you
+But this list is important, there are two cases:
+    
+    ['Registry','Cave']
+    [['No ,This Registry','Niubia'],['CXKNMSL','LBWNB']]
+ 
+So when to use it, you need to distinguish
+    
+    ['xx','xx']
+    In this case, the incoming type value is 1
+    is to add this list to the main list
+    
+    [[],[]]
+    In this case, the incoming type value is 2 (default)
+    This case is a direct override of the main list
 
 ### Last and Last(Let me say a few world on important business)
 Writer: FZZkill<br>
