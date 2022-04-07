@@ -12,6 +12,7 @@ setuptools.setup(
     description="更简单的配置",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    license="Mozilla Public License 2.0"
     url="https://github.com/FZZkill/TxvxConfig",
     packages= setuptools.find_packages(),
     classifiers=[
