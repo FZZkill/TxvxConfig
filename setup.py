@@ -11,12 +11,11 @@ setuptools.setup(
     description="更简单的配置",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    license="MPL",
     url="https://github.com/FZZkill/TxvxConfig",
     packages= setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MPL",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.8', 
