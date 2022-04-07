@@ -41,9 +41,9 @@
 
 内部文件通常是这样子的
 
-    example = 5
-    example1 = Hello, World
-    Writer = FZZkill
+    example=5
+    example1=Hello, World
+    Writer=FZZkill
 
 但是
 
@@ -89,7 +89,7 @@
     [[],[]]
     这种情况传入type值为2（默认）
     这种情况属于直接覆盖主列表
-
+### 对了，如果你删掉了这个实例，不会保存的
 ### 最后的废话：
 作者的B站：<p><a href="https://space.bilibili.com/626855532">快tm点我！(看nm，还不快关注！)</a></p>
 作者：FZZkill(服作者)

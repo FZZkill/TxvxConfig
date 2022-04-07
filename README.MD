@@ -35,7 +35,7 @@ so...... <br>
 | show()     | show()          | return all registered vaule                         |
 | showType() | showType()      | return now Type                                     |
 | new()      | new(List)       | Look Last!                                          |
-
+| serach()   | serach(Item)|   | Search Item(if has return true, else return false)  |
 ### 4, Txvx file format
 
 Under normal circumstances (there is no abnormal situation), the configuration files are all suffixed with '.txvx'<br>
@@ -43,16 +43,16 @@ For example: see nm's see.txvx
 
 Internal files usually look like this
 
-    example = 5
-    example1 = Hello, World
-    Writer = FZZkill
+    example=5
+    example1=Hello, World
+    Writer=FZZkill
 
 but
 
     I'm an idiot
 This is wrong because it has no value, you should write even null
 
-    I'm not a fool =
+    I'm not a fool=
 
 Notes:
 I didn't expect to put it, this broken thing has a comment!
@@ -88,6 +88,8 @@ So when to use it, you need to distinguish
     [[],[]]
     In this case, the incoming type value is 2 (default)
     This case is a direct override of the main list
+
+### if you delete the object, it cannot save
 
 ### Last and Last(Let me say a few world on important business)
 Writer: FZZkill<br>
