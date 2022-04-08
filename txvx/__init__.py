@@ -1,2 +1,2 @@
-from txvx import *
+from .txvx import *
 name = "txvx"
