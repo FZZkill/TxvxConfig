@@ -1,10 +1,115 @@
 Metadata-Version: 2.1
 Name: txvx
-Version: 0.0.0
-Summary: UNKNOWN
+Version: 1.0
+Summary: 更简单的配置
+Home-page: https://github.com/FZZkill/TxvxConfig
+Author: FZZkill
+Author-email: qa000m@126.com
 License: UNKNOWN
 Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
 License-File: LICENSE
 
-UNKNOWN
+# README-English about Txvx config manager
+# 支持中文版本的README，贼TM接地气
+<p><a href="./README_CN.MD">README-Chinese</a></p>
+## What is?
+It is a config manager
+#### What can it do?
+It can set config, read config, get config and create a config
+## How to use it?
+### 1,Install
+#### Linux/Unix
+Install python 3.9(If you use an earlier version, I cannot guarantee that this broken thing will work)
+`pip install txvx`
+####Windows
+Address:)
+
+### 2,Use
+In you python code, write 'import txvx' <br>
+and new a object
+so...... <br>
+
+    import txvx
+    
+    Txvx = txvx.run(FilePath)
+
+### 3,Functions
+
+| Functions  | Use             | Do                                                  |
+|------------|-----------------|-----------------------------------------------------|
+| get()      | get(var)        | get Config File {var} value                         |
+| set()      | set(var, value) | set Config File {var} value                         |
+| create()   | create()        | Create a new Config File(If it existed would erase) |
+| add()      | add(var, vaule) | add a new config vaule                              |
+| remove()   | remove(var)     | delete vaule and return the config vaule            |
+| save()     | save()          | save infomation from RAM                            |
+| show()     | show()          | return all registered vaule                         |
+| showType() | showType()      | return now Type                                     |
+| new()      | new(List)       | Look Last!                                          |
+| serach()   | serach(Item)|   | Search Item(if has return true, else return false)  |
+### 4, Txvx file format
+
+Under normal circumstances (there is no abnormal situation), the configuration files are all suffixed with '.txvx'<br>
+For example: see nm's see.txvx
+
+Internal files usually look like this
+
+    example=5
+    example1=Hello, World
+    Writer=FZZkill
+
+but
+
+    I'm an idiot
+This is wrong because it has no value, you should write even null
+
+    I'm not a fool=
+
+Notes:
+I didn't expect to put it, this broken thing has a comment!
+
+    # Note: only at the beginning
+### 5, a momentary misstep and eternal hatred!
+When you change the file, please be sure to use the 'save()' function to save the file, this grandson will not automatically save it, which is very important!
+
+Data is priceless, operate with care
+
+### finally
+Here comes the point
+
+How to use the new method? This is the essence of the txvx method. Under normal circumstances, all functions need to pass the new method when reading the file registration.
+
+Normally, this function needs to pass two values
+    
+    new([],type)
+   
+   What is [], this is easy to understand, in fact, it is to pass a list~~Why is the list []? I'm curious about this too, but that's the truth~
+
+But this list is important, there are two cases:
+    
+    ['Registry','Cave']
+    [['No ,This Registry','Niubia'],['CXKNMSL','LBWNB']]
+ 
+So when to use it, you need to distinguish
+    
+    ['xx','xx']
+    In this case, the incoming type value is 1
+    is to add this list to the main list
+    
+    [[],[]]
+    In this case, the incoming type value is 2 (default)
+    This case is a direct override of the main list
+
+### if you delete the object, it cannot save
+
+### Last and Last(Let me say a few world on important business)
+Writer: FZZkill<br>
+Language: Python3.9<br>
+Where: Github & Pypi
+
 
